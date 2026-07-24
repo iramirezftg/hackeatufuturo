@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="brandGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer border with gradient -->
+  <rect x="4" y="4" width="92" height="92" rx="24" fill="url(#brandGradient)"/>
+  <!-- Inner dark container -->
+  <rect x="9" y="9" width="82" height="82" rx="20" fill="#080d1a"/>
+  <!-- Main Cyan Sparkles Icon -->
+  <path d="M50 22 L55.5 40.5 L74 46 L55.5 51.5 L50 70 L44.5 51.5 L26 46 L44.5 40.5 Z" fill="#22d3ee"/>
+  <!-- Secondary Sparkle -->
+  <path d="M73 63 L75 70 L82 72 L75 74 L73 81 L71 74 L64 72 L71 70 Z" fill="#38bdf8"/>
+</svg>
