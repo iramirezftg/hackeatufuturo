@@ -118,7 +118,7 @@ const defaultData = {
       name: 'Israel Ramírez (@isra_developer)',
       role: 'Lead Architect & Fundador de Hackea tu Futuro',
       expertise: ['Full-Stack', 'Arquitectura Cloud', 'Hacking de Carrera Tech'],
-      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+      avatar: '/founder.jpg',
       availableTimes: ['Lun 11:00', 'Mié 15:00', 'Vie 17:00']
     },
     {

@@ -23,9 +23,9 @@ export default function Mentor() {
             <div className="lg:col-span-5 relative flex justify-center">
               <div className="relative w-full max-w-sm aspect-[4/5] rounded-2xl overflow-hidden border-2 border-slate-700/60 shadow-2xl bg-slate-800 group">
                 <img
-                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+                  src="/founder.jpg"
                   alt="Israel @isra_developer"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#060913] via-transparent to-transparent" />
                 

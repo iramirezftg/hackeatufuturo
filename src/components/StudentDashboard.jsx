@@ -161,7 +161,7 @@ export default function StudentDashboard({ onGoHome, onOpenAICoach }) {
 
             <div className="flex items-center gap-2 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-xl">
               <img
-                src={currentUser?.avatarUrl || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80'}
+                src={currentUser?.avatarUrl || '/founder.jpg'}
                 alt={currentUser?.name}
                 className="w-6 h-6 rounded-full object-cover border border-cyan-400"
               />
