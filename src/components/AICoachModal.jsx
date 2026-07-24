@@ -14,6 +14,7 @@ export default function AICoachModal({ isOpen, onClose }) {
   const [isTyping, setIsTyping] = useState(false);
 
   const samplePrompts = [
+    '¿Cómo negocio un salario un 20% más alto?',
     'Simula una pregunta de JavaScript para un puesto Junior',
     '¿Cómo explico que no tengo experiencia laboral previa en mi CV?',
     'Dame 3 tips para responder "¿Cuál es tu mayor debilidad?"',
@@ -30,9 +31,13 @@ export default function AICoachModal({ isOpen, onClose }) {
 
     setTimeout(() => {
       let reply = '¡Excelente pregunta! ';
-      if (textToSend.toLowerCase().includes('javascript') || textToSend.toLowerCase().includes('pregunta')) {
+      const lower = textToSend.toLowerCase();
+
+      if (lower.includes('salario') || lower.includes('20%') || lower.includes('negocio')) {
+        reply += 'Para negociar un salario 20% más alto: 1) Investiga el mercado en Glassdoor/Levels.fyi, 2) Demuestra tus logros con métricas cuantitativas, 3) Ofrece un rango donde tu mínimo sea tu meta ideal, 4) Negocia también beneficios adicionales (remoto, bonos, capacitaciones).';
+      } else if (lower.includes('javascript') || lower.includes('pregunta')) {
         reply += 'Aquí va una clásica de entrevista: "¿Qué es el Event Loop en JavaScript y cómo maneja las tareas asíncronas entre la Call Stack y la Microtask Queue?" Intenta explicarlo con tus palabras.';
-      } else if (textToSend.toLowerCase().includes('cv') || textToSend.toLowerCase().includes('experiencia')) {
+      } else if (lower.includes('cv') || lower.includes('experiencia')) {
         reply += 'En tu CV no pongas "Sin experiencia". En su lugar, crea la sección "Proyectos Destacados", documenta la tecnología usada, el problema que resolviste y pon el enlace en vivo y de GitHub.';
       } else {
         reply += 'Para destacar en la entrevista, siempre utiliza la metodología STAR (Situación, Tarea, Acción, Resultado). Muestra cómo pensaste bajo presión.';
