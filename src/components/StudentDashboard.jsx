@@ -43,8 +43,13 @@ export default function StudentDashboard({ onGoHome, onOpenAICoach }) {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (res.ok) {
-        const data = await res.json();
-        setDashboardData(data);
+        const text = await res.text();
+        try {
+          const data = JSON.parse(text);
+          setDashboardData(data);
+        } catch (jsonErr) {
+          console.warn('Dashboard response was not JSON:', jsonErr);
+        }
       }
     } catch (err) {
       console.error('Error loading student dashboard data:', err);
